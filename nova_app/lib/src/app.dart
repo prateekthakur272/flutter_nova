@@ -9,10 +9,16 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: nova.Renderer.render({
         'Scaffold': {
-          'title': 'This is Json',
-          'body': {'Text': {
-            'text':'This is text'
-          }}
+          'appBarColor': 0x000000,
+          'title': 'This is Title',
+          'body': {
+            'Container':{
+              'child' : {'Text': {
+                'text':'This is text'
+                }
+              }
+            }
+          }
         }
       }),
     );
